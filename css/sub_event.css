@@ -1,0 +1,118 @@
+
+.contents{
+    width: 100%;
+    padding-top: 100px;
+    margin-bottom: 50px;
+}
+
+.center{
+    text-align: center;
+}
+.sub_title{
+    margin: 50px 0;
+}
+
+.tab{
+    overflow: hidden;
+}
+.tab ul{
+    margin-top: 20px;
+}
+.tab ul li{ 
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.tab ul li.on{ 
+    display: block;
+}
+.tab ul li a{
+    display: block;
+    width: 470px;
+}
+.tab ul li.on a{ 
+    display: block;
+    width: 470px;
+}
+.tab ul li:nth-child(1) a{
+    background: url(/lego/img/sub_event/event_now_off.png) no-repeat center;
+    background-size: contain;
+    float: left;
+    height: 45px;
+}
+.tab ul li:nth-child(2) a{
+    background: url(/lego/img/sub_event/event_finished_off.png) no-repeat center;    
+    background-size: contain;
+    float:right;
+    height: 45px;
+}
+.tab ul li:nth-child(1).on a{
+    background: url(/lego/img/sub_event/event_now_on.png) no-repeat center;
+    background-size: contain;
+    height: 51px;
+}
+.tab ul li:nth-child(2).on a{
+    background: url(/lego/img/sub_event/event_finished_on.png) no-repeat center;
+    background-size: contain;
+    height: 51px;
+}
+
+
+.list{
+    width: 100%;
+    padding: 30px 0;
+
+}
+.list ul{display: none;}
+.list ul.on{display: block;}
+
+.list ul li{
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+    margin-bottom: 25px;
+}
+.list ul li:nth-child(2n){
+    margin-right: 0%;
+}
+
+.list ul li a{
+    width: 100%;
+    display: block;
+    
+}
+.list ul li a img{
+    width: 100%;
+    height: auto;
+}
+.event_desc{
+    margin: 10px;
+}
+.event_title{    
+    width: 100%;
+    font-size: 15px;
+    color: #000;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.event_date{
+    width: 100%;
+    font-size: 13px;
+    color: #888;
+    letter-spacing: -1px;
+}
+.event_date::before{
+   content: '';
+   display: inline-block;
+   width: 12px;  height: 12px;
+   background: url(/lego/img/sub_event/icon_time.png) 0 0 no-repeat;
+   margin-right: 5px;
+   vertical-align: -1px;
+   background-size: contain;
+}
+
+.list ul:nth-child(2) li a{
+    opacity: .6;
+}

@@ -1,0 +1,38 @@
+
+
+
+
+.shop_filter{
+    background: #fff;
+    border-radius: 15px;
+}
+
+.inner{}
+.search_shop{}
+.shop_search_inner{}
+.shop_search_inner form{
+
+}
+.shop_search_inner form select{}
+.shop_search_inner form select option{}
+
+.shop_keyword{}
+.shop_keyword input{}
+
+.shop_list{}
+.shop_list ul{}
+.shop_list ul li{}
+.shop_list ul li a{}
+
+.shop_info1{}
+.shop_info1 .shop_title{}
+.shop_info1 .shop_score{}
+.shop_info1 .shop_desc{}
+
+.shop_info2{}
+.shop_info2 .shop_open{}
+.shop_info2 .shop_conv{}
+.shop_info2 .shop_call{}
+.shop_info2 .shop_addr{}
+.shop_info2 .title{}
+.shop_info2 p{}

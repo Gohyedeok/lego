@@ -1,0 +1,809 @@
+/* ------------visual------------- */
+.h2{ font-size:35px; line-height: 1;}
+.textCenter{  text-align: center;}
+
+
+
+.visualWrap{
+    width: 100%;
+    position: relative;
+    height: 550px;
+}
+/* #figure{} */
+
+.swiper-container {
+    width: 100%;
+    height: 550px;
+  }
+
+  .swiper-slide {
+    font-size: 28px;
+    width: 100%;
+    height: 550px;
+    background-color: #ccc;
+    color: black;
+  }
+
+  .swiper-slide.one{
+    background: url(/lego/img/visual/visual01_01.png) no-repeat 0 0;
+    background-size: cover; /* width 값 100%로 맞춰주기 */
+    position: relative;
+  }
+  .inner{
+    width: 850px;
+    margin: 0 auto;
+    position: relative;
+    height: 550px;
+  }
+
+ .effect{
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: -100px;
+    right: 0;
+ }
+.msg{
+    width: 350px;
+    height: auto;
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+.pic{
+    width: 400px;
+    height: auto;
+    position: absolute;
+    top: 90px;
+    right: 0;
+}
+.more{
+    width: 70px;
+    height: auto;
+    position: absolute;
+    top: 315px;
+    left: 5px;
+}
+  .swiper-slide.two{
+    background: url(/lego/img/visual/visual02_01.png) no-repeat 0 0;
+    background-size: cover; /* height 값 100%로 맞춰주기 */
+    position: relative;
+  }
+
+  .swiper-slide.three{
+    background: url(/lego/img/visual/visual03_01.png) no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+  }
+/* 
+  .swiper-pagination-bullet{
+    background: transparent !important;
+    position: relative;
+
+    bottom: 30px;
+    left: 400px;
+    width: 100%;
+    opacity: 1;
+    padding: 0 3px;
+    
+  }
+  .swiper-pagination-bullet::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: url(/lego/img/icon/bullet.png) no-repeat center;
+    background-size: cover;
+    position: absolute; top: 0; left: 0;
+    
+  }
+
+  .swiper-pagination-bullet-active{
+    background: transparent !important;
+    position: relative;
+
+    bottom: 30px;
+    left: 400px;
+    width: 100%;
+  }
+
+  .swiper-pagination-bullet-active::after {
+      content: '';
+    width: 10px;
+    height: 10px;
+    background: url(/lego/img/icon/bullet_active.png) no-repeat center;
+    background-size: cover;
+    position: absolute; top: 0; left: 0;
+  }
+ */
+ .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+    background: url(/lego/img/icon/bullet.png) no-repeat center;
+    position: relative;
+    left: 400px;
+    bottom: 30px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background: url(/lego/img/icon/bullet_active.png) no-repeat center;
+  }
+
+/* ------------search------------ */
+#searchWrap{
+    position: relative;
+    top: -150px;
+    left: 45px;
+    z-index: 10;
+}
+.search{
+    position: relative;
+}
+.filter{
+    width: 210px;
+    height: 50px;
+    position: relative;
+}
+.filter>li{
+    float: left;
+    width: 100px;
+    height: 50px;
+}
+.filter>li>a{
+    width: 100px;
+    height: 50px;
+}
+
+.filter>li:nth-child(1) a{
+    background: url(/lego/img/icon/search_word_off.png) no-repeat 0 0;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100px; height: 50px;
+    background-size: contain;
+}
+.filter>li:nth-child(1).on a{
+    background: url(/lego/img/icon/search_word_on.png) no-repeat 0 0;
+    background-size: contain;
+    
+}
+.filter>li:nth-child(2) a{
+    background: url(/lego/img/icon/search_filter_off.png) no-repeat 0 0;
+    position: absolute;
+    top: 0; right: 0;
+    width: 100px; height: 50px;
+    background-size: contain;
+}
+.filter>li:nth-child(2).on a{
+    background: url(/lego/img/icon/search_filter_on.png) no-repeat 0 0;
+    background-size: contain;
+    
+}
+.search_bg>div:nth-child(1){
+    display: none;
+}
+.search_bg>div:nth-child(1).on{
+    display: block;
+}
+.search_bg>div:nth-child(2){
+    display: none;
+}
+.search_bg>div:nth-child(2).on{
+    display: block;
+}
+
+
+.search_bg{
+    position: relative;
+    top: 0; left: 0;
+}
+.search_bg .search_bar{
+    position: absolute;
+    top: -7px; left: -17px;
+    width: 450px; height: auto;
+}
+.search_bg input{
+    position: absolute;
+    top: 17px;  left: 20px;
+    height: 35px; width: 335px;
+    border: none;
+    background: none;
+    font: 15px 'NanumSquareRound';
+    color: #333;
+    outline: none;
+}
+.search_btn{
+    position: absolute;
+    top: 17px;
+    left: 365px;
+    z-index: 10;
+}
+.search_btn>img{
+    width: 33px;
+    height: auto;
+}
+
+.search_bg .filter_place{
+    position: absolute;
+    top: -7px; left: -17px;
+    width: 450px; height: auto;
+}
+.filter_bar{
+    float: left;
+    margin-right: -22px;
+    width: 145px;
+    height: 92px;
+}
+.label{
+    float: left;
+   
+}
+.label>input{
+    display: inline-block;
+    width: 49px;
+    height: 40px;
+    left: 55px;
+    top: 20px;
+}
+.label>input:nth-child(2){
+    width: 50px;
+    height: 40px;
+    left: 179px;
+}
+.label>input:nth-child(3){
+    width: 50px;
+    height: 40px;
+    left: 295px;
+
+}
+.filter_place .search_btn{
+    position: absolute;
+    top: 24px;
+    left: 383px;
+    z-index: 10;
+}
+
+/* contents */
+/* #contents{} */
+section{
+    padding: 50px 0;
+}
+
+
+/* ---------------con1--------------- */
+section.con1{
+    background-color: #c1d9e5;
+}
+.con1{
+    width: 100%;
+    height: 400px;
+    }
+    
+.con1_slider-div .btn_wrap{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 10;
+}
+.reco-wrap{
+    position: relative;
+    top: -50px;
+}
+.con1_wrap{
+    position: relative;
+    /* width: 100%; */
+    height: 500px;
+    overflow: hidden;
+}
+
+.con_L{
+    width: 50%;
+    float: left;
+    height: 100%;
+    position: relative;
+}
+.con1 .con1_title{
+    font: bold 23px 'NanumSquareRound';
+    color: #000;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+
+.con1 .off{
+    opacity: 0;
+    transform: translate(-100%, 0%) matrix(1, 0, 0, 1, 0, 0);
+    /* opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0); */
+}
+.con1 .on{
+    opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.car{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.car .carImg{
+   width: 700px;
+   height: 300px;
+}
+.adult{
+    width: 100%;
+    height: auto;
+}
+.kids{
+    width: auto;
+    height: 100%;
+    float: right;
+}
+.con_R{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 470px;
+    margin-left: 13px;
+}
+
+/* .con1_slider-div{} */
+/* .recommand{} */
+.tit{
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.tit h3{
+    display: inline-block;
+    font: bold 20px 'NanumSquareRound';
+    color: #333;
+    margin: 0 10px;
+}
+.tit p{
+    display: inline-block;
+    font: 14px 'NanumSquareRound';
+    color: #555;
+    
+}
+
+.con1_btn_wrap{
+    width: 100%;
+    display: inline-block;
+
+    z-index: 10;
+    height: 20px;
+    position: relative;
+    top: 220px;
+}
+
+hr{
+    background-color: #000;
+    height: 2;
+}
+/* .goodsList{} */
+article.reco{
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+    height: 90px;
+    margin-top: 20px;
+    position: relative
+}
+.reco:hover .reco_pic>img{
+    transform: scale(1.2);
+}
+.reco .rank{
+    position: absolute;
+    top: 30px; left:30px ;
+}
+.reco .rank>img{
+    width: 80%;
+}
+.reco .reco_pic{
+    width: 60px; height: 60px;
+    line-height: 60px;
+    position: absolute;
+    top: 15px; left: 75px;
+    text-align: center;
+
+}
+
+.image_v img{
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+.image_h img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.reco h4{
+    font: bold 16px 'NanumSquareRound';
+    color: #2f2f2f;
+    position: absolute;
+    top: 20px;
+    left: 160px;
+}
+ul.score{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+}
+.score>li{
+    color: #333;
+    font: bold 12px 'NanumSquareRound';
+    float: left;
+    padding: 2px;
+}
+.score>li>img{
+    width: 12px;
+}
+
+.reco p{
+    font: 13px 'NanumSquareRound';
+    color: #555;
+    position: absolute;
+    top: 50px;
+    left: 160px;
+}
+.reco p::before{
+    content: '';
+    display: inline-block;
+    width: 13px; height: 15px;
+    background: url(/lego/img/icon/review_icon.png) 0 0 no-repeat;
+    margin-right: 5px;
+    vertical-align: -5px;
+    background-size: contain;
+}
+
+
+/* --------------con2------------- */
+section.con2{
+    padding: 92px 0 0 0;
+}
+.hot_tit{
+    margin-bottom: 40px
+}
+
+.hotItem{
+    margin-top: 20px;
+}
+.hotItem>.slider-div{
+    overflow: hidden;
+
+}
+.hotItem>.slider-div>.con2_inner{
+    position: relative;
+    float: left;
+    width: 220px !important;
+    margin-right: 20px;
+    text-align: center;
+    height: 400px;
+}
+.hotItem>.slider-div>.con2_inner>a{
+    position: relative;
+
+}
+.slick-slide {
+    margin-right: 20px;
+}
+.btn_wrap{
+    position: absolute;
+    top: -54px;
+    right: 0;
+}
+.pageBtn{
+    width: 110px;
+    height: 20px;
+    /* background-color: khaki; */
+    position: relative;
+}
+
+.thumb{
+    margin: 0 auto;
+    width: auto;
+    height: 170px;
+    position: relative;
+    z-index: 10;
+    padding-top: 20px
+}
+.thumb img{
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+.con2_inner:hover .thumb{
+   transform: scale(1.2);
+}
+.cont{
+    margin: -88px 0 0;
+    padding: 100px 30px 0px 30px;
+    background: #fff;
+    border-radius: 20px;
+    text-align: center;
+    position: relative;
+}
+.cont>p{
+    padding-bottom: 5px;
+}
+.cont .category{
+    font-size: 12px;
+    color: #414141;
+    text-decoration: underline;
+}
+.cont .name{
+    font-weight: 700;
+    font-size: 17px;
+    color: #333;
+}
+.cont .price{
+    padding: 0;
+    font-size: 16px;
+    color: #e03138;
+    padding: 5px 0;
+    font-weight: 700
+}
+.icon{
+    display: inline-block;
+}
+.icon>ul{
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.icon>ul>li{
+    float: left;
+    margin: 0 2px;
+}
+.icon>ul>li>img{
+    width: 40px;
+}
+
+/* ---------------찜, 장바구니--------------- */
+.cont_btn_wrap{
+    position: absolute;
+    bottom: 0; left: 0;
+
+    width: 100%; height: 65px;
+    border-radius: 0 0 20px 20px;
+    z-index: 5;
+    display: none;
+}
+.cont_btn{
+    position: relative;
+    width: 100%; height: 100%;
+}
+.cont_btn>a{
+    position: relative;
+    width: 30px; height:30px;
+}
+.cont_btn_spec{
+    position: absolute;
+    top: 13px;
+    z-index: 15;
+    width: 35px; height: 35px;
+
+}
+.wishlist_btn{
+    right: 10px;
+}
+
+.cart_btn{
+    left: 10px;
+}
+
+.btn_back{
+    width: 100%; height: 65px;
+    background-color: #2f2f2f;
+    opacity: 0.7;
+    border-radius: 0 0 20px 20px;
+    z-index: 10;
+}
+
+.con2_inner:hover .cont_btn_wrap{
+    display: block;
+}
+/*------------------ banner1------------------ */
+.banner1{
+    text-align: center;
+}
+.banner1Img{
+    width: 900px;
+    margin: 0 auto;
+}
+.banner1Img img{
+    width: 50%;
+    float: left;
+}
+/* .banner1size{} */
+
+/* -------------------con3-------------------- */
+/* .con3{}
+.con3 h2{} */
+.con3 .con3_tit{
+    width: 30%;
+    float: left;
+}
+.con3R{
+    width: 70%;
+    float: left;
+}
+
+
+.con3R .btn_wrap{
+    position: absolute;
+    top: 105px;
+    left: -283px;
+}
+
+/* .con3_inner{
+     margin: 10px;
+} */
+
+ul.review{
+    position: relative;
+    left: 25px;
+    margin-right: 20px;
+}
+.review li:hover img{
+    transform: scale(1.2);
+}
+.review li{
+    height: 110px;
+    background: #fff;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    padding: 30px 59px;
+}
+.review li img{
+    position: absolute;
+    top: 20px;
+    left: -23px;
+    width: 45px;
+}
+.review li h5{
+    font: bold 16px/1.5 'NanumSquareRound';
+    color: #000;
+}
+.review li p{
+    font:  15px/1.5 'NanumSquareRound';
+    color: #000;
+    margin: 3px 0;
+}
+.review li span{
+    font:  13px/1.5 'NanumSquareRound';
+    color: #959595;
+}
+
+/*------------------------- con4------------------ */
+.con4{
+    position: relative;
+    height: 400px;
+}
+.background{
+    position: absolute;
+    width: 100%;  height: 270px;
+    background: url(/lego/img/icon/shop_bg.png) no-repeat center;
+    background-size: cover;
+    bottom: 0px; left: 0px;
+}
+/* .con4 h2{} */
+.con4_slider-div{
+    margin-bottom: 20px;
+}
+.con4_btn_wrap{
+    width: 100%;
+    display: inline-block;
+
+    z-index: 10;
+    height: 20px;
+    position: relative;
+    top: 240px;
+}
+.con4_btn_wrap .pageBtn{
+    width: 100%;
+}
+
+
+.con4_inner{
+    width: 100%;
+    height: 350px;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    padding-top: 20px;
+}
+.con4_inner a{
+    border: none;
+}
+
+.con4_inner img{
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    transform:translateY(0px);
+    transition: all 0.5s;
+}
+.con4_inner img:hover{
+   transform:translateY(-10px);
+   transition: all 0.5s;
+}
+.con4_inner img::after{
+    width: 100%; height: 100%;
+    background-color: #2f2f2f;
+    opacity: 0.7;
+    /* border-radius: 0 0 20px 20px; */
+    z-index: 10;
+    /* display: none; */
+}
+
+.shop{
+    position: relative;
+    top: -10px;
+
+}
+
+.con4_inner p.des{  
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 70px;
+    color: #000;
+    text-align: center;
+    position: relative;
+    top: 0px;
+}
+.shop_info{
+    margin: 0 auto;
+    position: relative;
+    top: 0px;
+    height: 100px;
+}
+
+ul.shop_score{
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.shop_score>li{
+    float: left;
+    padding: 2px;
+}
+.shop_score>li>img{
+    width: 12px;
+}
+
+
+.shop_name{
+    font-size: 13px;
+    color: #000;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.shop_name::before{
+    content: '';
+    display: inline-block;
+    width: 10px; height: 16px;
+    background: url(/lego/img/icon/place.png) 0 0 no-repeat;
+    margin-right: 5px;
+    vertical-align: -4px;
+    background-size: contain;
+}
+
+
+/* banner2 */
+/* .banner2{}
+.banner2Img{} */
+.banner2Img img{
+    width: 33.33%;
+    float: left;
+}
+/* .banner2size{} */
+
